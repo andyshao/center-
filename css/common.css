@@ -1,0 +1,135 @@
+/*======================Reset=======================*/
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,  
+pre, form, fieldset, table, th, td, img, textarea, div,a {border:0 none;margin:0;padding:0;outline: 0;font-size: 100%; text-align:left; vertical-align: baseline;background: transparent; line-height:1.8em;}
+
+select{font-size:12px;font-family:simsun;}
+ul,ol,li{list-style-type:none}
+a {color:#424242;text-decoration:none; outline:none;/*FF标准去虚线框*/}
+a {star:expression(this.onFocus=this.blur()); /* for Ie*去虚线框*/ }
+a,span,img,td,form,input{line-height:inherit;}
+a:hover{text-decoration:none;}
+:focus {outline: none;}
+i{font-style: normal;}
+/*去a标签点击阴影*/
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+table, td, th {vertical-align: middle;}
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+a img {border: none;outline: none;}
+ol {margin-left: 2em;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+input{padding: 0;margin: 0 ;border: 0;border-radius: 0;}
+input{vertical-align: middle;}
+input[type=number] {  
+    -moz-appearance:textfield; 
+    outline: none; 
+    padding: 0;
+    margin: 0;
+}  
+input[type=number]::-webkit-inner-spin-button,  
+input[type=number]::-webkit-outer-spin-button {  
+    -webkit-appearance: none;  
+    margin: 0; 
+    padding: 0;
+} 
+.boxsizing{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.left{float: left;}
+.right{float: right;}
+p,span,a,h1,h2,h3,h4,h5,h6{font-family:"黑体",Microsoft Yahei; color:#4C4C4C;}
+/*======================浮动==================*/
+.clear{clear:both;height:0px;overflow:hidden;}
+.clearfix:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { zoom:1}
+.clearfix { display:block; }
+.bugfix{zoom:1}
+
+
+/**********************************************************************************************以上为 reset部分被 ************************************************************************************************************************/
+
+
+/*表格 */
+.Table .table th{text-align: center;}
+.Table .table td{text-align: center;font-size: 14px;}
+.Table .table{border-bottom: 1px solid #ddd;}
+/*分页*/
+.pagination > .active > a{background: #f2846f;border-color:#f2846f;}
+.pagination >li>a{color:#f2846f;}
+.pagination >li>a:hover{color:#f2846f ;}
+.pagination >li>span:hover{color:#f2846f ;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #f2846f;
+    border-color: #f2846f;
+}
+.pagination li span{color: #f2846f;cursor: pointer;}
+.center{text-align: center;}
+
+
+
+a{text-decoration: none;}
+a:focus {
+outline:none;
+-moz-outline:none;
+text-decoration: none;
+}
+html{height: 100%;background:#efeff4}
+body{position: relative;}
+
+.Content{margin-left:250px ;width: auto;min-width: 800px;padding-bottom: 100px}
+.common .wrap2{padding: 0 20px 0 20px;}
+.common{zoom: 1;width: 100%;overflow: hidden;}
+.common .menu a:hover{background:none;text-decoration: none;}
+.common .header{background:#53596c;width: 100%;height: 65px }
+.common .header  ul{float: right;}
+.common .header  ul li{height: 100%;line-height: 65px;background: url(../images/circle.png) no-repeat 30px center;float: left;}
+.common .header  ul li a{color: #fff;font-size: 20px;height: 100%;line-height: 65px;padding: 0 35px 0 0;}
+.common .header  ul li a:hover{color: #ff866f;}
+.common .header  ul li.none{background: none;}
+/*面包屑导航*/
+.common .breadcrumb .active {
+    color: #f6554d;
+}
+
+.common .breadcrumb{padding: 0;margin: 0;background: none;}
+.common .breadcrumb li{height: 50px;line-height: 50px;font-size: 15px;float: left;}
+.common .breadcrumb a{font-size: 15px;color: #35393e;}
+.common .breadcrumb > li + li::before {
+    color: #35393e;
+    content: "> ";
+    padding: 0 5px;
+    float: left;
+}
+/*以上为顶部*/
+.common .menu{background: #33363f;position: absolute;top:0;left:0;width:250px;z-index:1500;min-height: 100%;}
+.common .menu span{font-family: "黑体";}
+.common .menu .title{height:60px;width: 262px;color: #fff;background: #737b93 url(../images/shadow.jpg) no-repeat left bottom;padding-bottom: 6px;}
+.common .menu .title a{display: block;height: 100%;width:100%;color: #fff;font-size: 18px;line-height: 60px;text-align: center;}
+.common .menu ul{width:230px;margin: 0 auto;}
+.common .menu ul li a{font-size: 15px;color: #c7c7c7;}
+.common .menu ul li{background:#33363f url(../images/line.png) repeat-x center bottom;}
+.common .menu ul li a:focus{background: none;}
+.common .menu li a{height:100%;width:100%;line-height: 50px;padding: 0;display: block;height: 50px;}
+.common .menu li a.Title{font-size: 16px;color:#fff;background:url(../images/line.png) repeat-x center bottom;}
+.common .menu li a.Title:focus{background:url(../images/line.png) repeat-x center bottom;}
+.common .menu li a.Title span{color: #fff;}
+.common .menu li ul li a:hover span{opacity: 0.8;background: none;color: #f6554d;}
+.common .menu li ul li a:hover{background: none;border-right: 2px solid #f6554d;}
+.common .menu li ul li a.active{border-right: 2px solid #f6554d;color: #f6554d;}
+.common .menu li ul li a.active span{color: #f6554d;}
+.common .menu li a.Title i img{vertical-align:-10%;padding-right: 10px;}
+.common .menu li a .icon{float:right;display: inline-block;line-height: 50px;}
+.common .menu li ul li a span{color:#c7c7c7;}
+.common .menu li ul li a img{vertical-align:-8%;padding-right: 10px;}
+.common .menu li i{display: inline-block;height: 100%;line-height: 50px;}
+/*以上为侧边栏*/
+
+
+
+
+
+

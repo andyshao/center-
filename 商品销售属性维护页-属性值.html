@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="stockGoods common shopList salesAttr attrValue">
+			<form action="">
+				<div class="panel panel-default">
+					<div class="panel-heading shopTitle">属性值</div>
+					<div class="panel-body clearfix">
+						<div class="buttongroup left">
+							<a type="button" class="btn btn-default" href="商品销售属性维护页-属性值－新增（编辑）.html"><i class="icon-plus-sign"></i>新增</a>
+							<button type="button" class="btn btn-default"><i class="icon-trash"></i>删除</button>
+						</div>
+					</div>
+					<div class="table-responsive Table">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+								<th style="width:5%"></th>
+								<th style="width:10%">标题</th>
+								<th style="width:20%">图片</th>
+								<th style="width:40%">描述</th>
+								<th>操作</th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>
+									<input type="checkbox">
+								</td>
+								<td>白色</td>
+								<td>
+									<div class="img">
+										<img src="images/phonepic.jpg" alt="">
+									</div>
+								</td>
+								<td>的健康撒谎第三个黄金分割的健康</td>
+								<td>
+									<a href="商品销售属性维护页-编辑.html" class="red">编辑</a> |
+									<a href="#">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox">
+								</td>
+								<td>银色</td>
+								<td><div class="img"><img src="images/phonepic.jpg" alt=""></div></td>
+								<td></td>
+								<td>
+									<a href="商品销售属性维护页-编辑.html" class="red">编辑</a> |
+									<a href="#">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox">
+								</td>
+								<td>金色</td>
+								<td><div class="img"><img src="images/phonepic.jpg" alt=""></div></td>
+								<td></td>
+								<td>
+									<a href="商品销售属性维护页-编辑.html" class="red">编辑</a> |
+									<a href="#">删除</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="buttonAction clearfix">
+					<a href="#" class="button_red reset pull-left">确定</a>
+					<a href="#" class="button_red pull-right">取消</a>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		Table();
+		pagation();
+	})
+</script>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>店铺装修</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+	</head>
+	<body>
+		<div class="Descoration-foot popups">
+			<div class="panel">
+				<div class="panel-heading clearfix">
+					<span class="left">店铺尾部广告图</span>
+					<span class="right"><i class="icon-remove"></i></span>
+				</div>
+				<form action="">
+					<div class="panel-body">
+						<div class="panel-content">
+							<div class="title">
+								<span>广告图片设置</span>
+							</div>
+							<ul>
+								<li>
+									<span class="Name">链接地址：</span>
+									<input type="text" class="form-control" placeholder="http：//"/>
+								</li>
+								<li>
+									<span class="Name">链接地址：</span>
+									<span><input type="radio" id="localWindow" class="radios" name="window" /><label for="localWindow">本窗口</label></span>
+									<span><input type="radio" id="newWindow" class="radios" name="window"/><label for="newWindow">新窗口</label></span>
+								</li>
+								<li class="clearfix">
+									<span class="Name left">上传图片：</span>
+									<div class="left picUploader clearfix">
+										<div class="img left">
+											<img src="images/picbgsm.jpg" alt="" class="img-responsive" />
+											<input type="file" />
+											<div class="picCommander">上传图片</div>
+										</div>
+										<div class="Text left">
+											注：图片尺寸高<i class="red">160px,宽1920px</i>(为保证上传图片的清晰度及页面的美观，请按尺寸要求上传图片!)
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="btngroup clearfix">
+							<input type="submit" value="保存" class="btns submit left"/>
+							<input type="reset" value="取消" class="btns reset right"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+	var up=$(".picUploader");
+	liInt(up);
+})
+function liInt(obj){//banner弹出层JS初始化
+	commander(obj);
+}//banner部分JS初始化
+
+function commander(obj){
+	var img=obj.find(".img");
+	img.hover(function(){
+		$(this).find(".picCommander").stop().fadeIn();
+	},function(){
+		$(this).find(".picCommander").stop().fadeOut();
+	})
+}//banner层上传照片提醒
+
+</script>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="common addClassiceAttr">
+			<form action="">
+				<div class="panel panel-default">
+					<div class="panel-heading shopTitle">添加分类属性</div>
+					<div class="panel-body">
+						<div class="Table">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th></th>
+										<th>标题</th>
+										<th style="width:40%">描述</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>屏幕尺寸</td>
+										<td></td>
+										<td>
+											<a href="#" class="red">选择</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>内存</td>
+										<td></td>
+										<td>
+											<a href="#" class="red">选择</a>
+										</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>制式</td>
+										<td></td>
+										<td>
+											<a href="#" class="red">选择</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<input type="submit" class="button_red" value="选择">
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		addColor(); //当select选值发生改变时改变颜色
+		Table();
+	})
+
+	function addColor() {
+		var select = $("select");
+		select.on("change", function() {
+			$(this).css({
+				"color": "#555"
+			})
+		})
+	}
+
+</script>

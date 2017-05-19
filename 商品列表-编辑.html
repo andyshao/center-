@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<link rel="stylesheet" type="text/css" href="dist/css/wangEditor.min.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="common  Wrapper edit">
+			<div class="panel panel-default">
+				<div class="panel-heading shopTitle">编辑</div>
+				<div class="panel-body">
+					<form action="">
+						<ul class="list-group">
+							<li class="list-group-item clearfix">
+								<div class="error warming">【警告：您所编辑的商品开启了自动更新商品库商品信息的功能，您所编辑的商品信息除商品价格外，都有可能将会被覆盖。如果不希望您编辑的商品信息被覆盖掉,请关闭该商品的自动更新。】</div>
+								<div class="fromGroup left">
+									<label class="parameters">商品类目：</label>
+									<select name="productCategory" id="" class="form-control">
+										<option value="" disabled="disabled" selected="selected" style="display:none">- -请选择- -</option>
+										<option value="">110</option>
+									</select>
+								</div>
+								<div class="fromGroup right">
+									<span class="parameters">商品类目：</span>
+									<select name="productCategory" id="" class="form-control">
+										<option value="" disabled="disabled" selected="selected" style="display:none">- -请选择- -</option>
+										<option value="">110</option>
+									</select>
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="fromGroup left">
+									<label class="parameters" for="characteristic">特征值：</label>
+									<select name="characteristic" id="" class="form-control">
+										<option value="" disabled="disabled" selected="selected" style="display:none">- -请选择- -</option>
+										<option value="">110</option>
+									</select>
+								</div>
+								<div class="formGroup right">
+									<label class="parameters" for="productName">商品名称：</label>
+									<input name="productName" type="text" class="form-control" placeholder="请输入商品名称">
+									<p class="error">商品名称最大长度为200字符</p>
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="formGroup left">
+									<label class="parameters" for="PackingWeight">包装重量：</label>
+									<input name="PackingWeight" type="text" class="form-control" placeholder="请输入包装重量">
+									<p class="error">包装重量最小为0</p>
+								</div>
+								<div class="formGroup right">
+									<label class="parameters" for="PackingVolume">包装体积：</label>
+									<input name="PackingVolume" type="text" class="form-control" placeholder="请输入包装体积">
+									<p class="error">包装体积最小为0</p>
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="formGroup left">
+									<label class="parameters" for="PackingVolume">SEO关键字：</label>
+									<input name="PackingVolume" type="text" class="form-control" placeholder="请输入SEO关键字">
+									<p class="error">SEO关键字最大长度为100字符</p>
+								</div>
+								<div class="formGroup right">
+									<label class="parameters" for="PackingVolume">运费：</label>
+									<select name="" id="" class="form-control Freight">
+										<option disabled="" selected="">请选择运费</option>
+										<option value="">运费</option>
+									</select>
+									<a href="新增运费模板.html" class="btn btn-default">新建运费模板</a>
+									<p class=" Vbottom">发货地：湖北省 武汉市 硚口区</p>
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="formGroup left">
+									<label class="parameters" for="PackingVolume">详细介绍：</label>
+									<textarea name="" id="" placeholder="请输入产品详细介绍" class="form-control"></textarea>
+									<p class="error Vbottom">详细介绍最大长度为400字符</p>
+								</div>
+								<div class="formGroup right">
+									<label class="parameters" for="PackingVolume">规格参数：</label>
+									<textarea name="" id="" placeholder="请输入规格参数" class="form-control"></textarea>
+									<p class="error Vbottom">规格参数最大长度为400字符</p>
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="formGroup left">
+									<label class="parameters" for="PackingVolume">包装清单：</label>
+									<textarea name="" id="" placeholder="请输入包装清单" class="form-control"></textarea>
+									<p class="error Vbottom">包装清单最大长度为400字符</p>
+								</div>
+								<div class="formGroup right">
+									<label class="parameters" for="PackingVolume">售后保障：</label>
+									<textarea name="" id="" placeholder="请输入售后保障" class="form-control"></textarea>
+									<p class="error Vbottom">售后保障最大长度为400字符</p>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="formGroup">
+									<label class="parameters" for="PackingVolume">SEO描述：</label>
+									<textarea name="" id="" placeholder="请输入SEO描述" class="form-control"></textarea>
+									<p class="error Vbottom">SEO最大长度为400字符</p>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<span class="parameters">图片：</span>
+								<p class="picUploader"><input type="file"></p>
+								<div class="commander">
+									<span>请上传小于2M 格式为jpg，png，bmp图片</span>
+									<p class="error">图片格式有错误</p>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<span class="parameters">详细介绍：</span>
+								<div id="editor-trigger"></div>
+							</li>
+							<li class="list-group-item">
+								<span class="parameters">规格参数：</span>
+								<div id="editor-trigger2"></div>
+							</li>
+						</ul>
+						<div class="buttonAction">
+							<input type="submit" class="button_red" value="编辑">
+							<input type="reset" class="button_red reset" value="取消">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script src="dist/js/wangEditor.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		addColor(); //当select选值发生改变时改变颜色
+		editor1("editor-trigger");
+		editor1("editor-trigger2");
+	})
+
+	function addColor() {
+		var select = $("select");
+		select.on("change", function() {
+			$(this).css({
+				"color": "#555"
+			})
+		})
+	}
+</script>
+<script type="text/javascript">
+	function editor1(obj) {
+		var editor = new wangEditor(obj);
+
+		// 上传图片
+		editor.config.uploadImgUrl = '/upload';
+		editor.config.uploadParams = {
+			// token1: 'abcde',
+			// token2: '12345'
+		};
+		editor.config.uploadHeaders = {
+			// 'Accept' : 'text/x-json'
+		}
+
+		editor.config.emotionsShow = 'value';
+		editor.config.emotions = {
+			'default': {
+				title: '默认',
+				data: './emotions.data'
+			},
+			'weibo': {
+				title: '微博表情',
+				data: [{
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/7a/shenshou_thumb.gif',
+					value: '[草泥马]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif',
+					value: '[神马]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/bc/fuyun_thumb.gif',
+					value: '[浮云]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/c9/geili_thumb.gif',
+					value: '[给力]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/f2/wg_thumb.gif',
+					value: '[围观]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/70/vw_thumb.gif',
+					value: '[威武]'
+				}]
+			}
+		};
+
+		editor.create();
+	}
+</script>

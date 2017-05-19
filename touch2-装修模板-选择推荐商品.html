@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<html>
+		<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>店铺装修</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+	</head>
+	<body>
+		<div class=" popups Tcommader">
+			<div class="panel">
+				<div class="panel-heading clearfix head-phbg">
+					<span class="left">选择商品</span>
+					<span class="right"><i class="icon-remove-sign"></i></span>
+				</div>
+				<div class="panel-body">
+					<form action="">
+						<div class="search">
+							<ul>
+								<li>
+									<span class="Name">筛选商品:</span>
+									<select name="" id="" class="form-control nth_1">
+										<option value="">所有分类</option>
+									</select>
+									<select name="" id="" class="form-control nth_2">
+										<option value="">按销量从高到低</option>
+									</select>
+									<input type="text" class="form-control nth_2" placeholder="请输入关键词"/>
+								</li>
+								<li>
+									<span class="Name">价格:</span>
+									<input type="text" class="form-control nth_3" />
+									<span class="des ">~</span>
+									<input type="text" class="form-control nth_3" />
+									<input type="submit" class="btn btn-default" value="搜索"/>
+								</li>
+							</ul>
+						</div>
+						<!--search-->
+						<div class="Tchoice">
+							<div class="title clearfix">
+								<span class="left">选择商品</span>
+								<span class="right"><i class="icon-angle-down"></i></span>
+							</div>
+							<div class="ulWrap">
+								<ul class="clearfix">
+									<li class="clearfix">
+										<div class="img left">
+											<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+										</div>
+										<div class="left TextDesprection">
+											<p>汽车盘式刹车片</p>
+											<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+											<div class="sell"><span class="haveSell">已售10笔</span></div>
+										</div>
+										<div class="marks"><img src="images/mark.png" alt="" /></div>
+									</li>
+									<li class="clearfix">
+										<div class="img left">
+											<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+										</div>
+										<div class="left TextDesprection">
+											<p>汽车盘式刹车片</p>
+											<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+											<div class="sell"><span class="haveSell">已售10笔</span></div>
+										</div>
+										<div class="marks"><img src="images/mark.png" alt="" /></div>
+									</li>
+									<li class="clearfix">
+										<div class="img left">
+											<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+										</div>
+										<div class="left TextDesprection">
+											<p>汽车盘式刹车片汽车盘式刹车汽车盘式刹车</p>
+											<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+											<div class="sell"><span class="haveSell">已售10笔</span></div>
+										</div>
+										<div class="marks"><img src="images/mark.png" alt="" /></div>
+									</li>
+									<li class="clearfix">
+										<div class="img left">
+											<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+										</div>
+										<div class="left TextDesprection">
+											<p>汽车盘式刹车片</p>
+											<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+											<div class="sell"><span class="haveSell">已售10笔</span></div>
+										</div>
+										<div class="marks"><img src="images/mark.png" alt="" /></div>
+									</li>
+								</ul>
+								<div class="more"><a href="javascript:void(0)" class="button_red">+点击加载更多</a></div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="btngroup clearfix">
+					<a type="submit"  class="btns submit left orange" href="touch2-装修模板-推荐商品.html"/>确定<a>
+					<input type="reset" value="取消" class="btns reset right"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+	$(function(){
+		addStyle()
+	})
+	function addStyle(){
+		var li=$(".ulWrap").find("li");
+		li.click(function(){
+			$(this).find(".marks").show().end().siblings("li").find(".marks").hide();
+			$(this).addClass("active").siblings("li").removeClass("active");
+		})
+	}
+</script>

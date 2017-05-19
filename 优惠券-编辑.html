@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="layer/layer.js"></script>
+	<script src="laydate/laydate.js"></script>
+	</head>
+
+	<body>
+		<div class="common CouponEdit">
+			<form action="">
+				<div class="panel panel-default form">
+					<div class="panel-heading shopTitle">编辑优惠券</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>名称：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入名称"/>
+							    	</span>
+								<p class="error">名称输入过长</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>创建方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择创建方式</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>限制方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择使用限制</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择优惠方式</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠额度：</span>
+								<span class="Message">
+					    			<input type="text" class="form-control half" />
+					    			<span class="jg">~</span>
+					    			<input type="text" class="form-control half" />
+						    	</span>
+								<p class="error">请输入优惠额度</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>使用时间：</span>
+								<span class="Message">
+									<input  type="text" class="form-control half time1" id="start" placeholder="开始时间"/>
+					    			<span class="jg">~</span>
+					    			<input  type="text" class="form-control half time2 " id="end"  placeholder="结束时间"/>
+						    	</span>
+								<p class="error">请输入开始时间</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠券数量：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入优惠券数量"/>
+							    	</span>
+								<p class="error">优惠券数量必须为数字</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>是否启用：</span>
+									<span class="Message">
+							    		<input type="radio" name="use" id="useOn" class="radio"/><label for="useOn">启用</label>
+							    		<input type="radio"  name="use" id="useOff" class="radio"/><label for="useOff">禁用</label>
+					   		 	   </span>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>说明：</span>
+									<span class="Message">
+							    		<textarea name="" rows="" cols="" class="form-control"></textarea>
+					   		 	   </span>
+					   		 	   <p class="error">说明输入过长</p>
+							</div>
+						</li>
+					</ul>
+					<div class="buttongroup clearfix">
+						<input type="submit" class="button_red left" value="确定"/>
+						<input type="reset" class="button_red reset right" value="取消" />
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		addColor();
+		laydate(time.start);
+		laydate(time.end);
+	})
+
+	function addColor() {
+		var select = $("select");
+		select.on("change", function() {
+			$(this).css({
+				"color": "#555"
+			})
+		})
+	}
+ var time={
+ start:{
+	  elem: '#start',
+	  format: 'YYYY/MM/DD hh:mm:ss',
+	  min: laydate.now(), //设定最小日期为当前日期
+	  max: '2099-06-16 23:59:59', //最大日期
+	  istime: true,
+	  istoday: false,
+	  choose: function(datas){
+	     end.min = datas; //开始日选好后，重置结束日的最小日期
+	     end.start = datas //将结束日的初始值设定为开始日
+	  }
+	},
+end:{
+  elem: '#end',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(),
+  max: '2099-06-16 23:59:59',
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+    start.max = datas; //结束日选好后，重置开始日的最大日期
+  }
+}
+}
+</script>

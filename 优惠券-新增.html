@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="layer/layer.js"></script>
+	</head>
+
+	<body>
+		<div class="common CouponEdit">
+			<form action="">
+				<div class="panel panel-default form">
+					<div class="panel-heading shopTitle">新增优惠券</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>名称：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入名称"/>
+							    	</span>
+								<p class="error">名称输入过长</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>创建方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择创建方式</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>限制方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择使用限制</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>使用限制：</span>
+								<span class="Message ">
+							    		<input type="text" class="form-control useLimit" placeholder="请输入名称"/><a href="优惠券-新增-维护.html" type="button" class="btn btn-danger">维护</a>
+							   </span>
+								<p class="error">使用限制过长</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠方式：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择优惠方式</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠额度：</span>
+								<span class="Message">
+					    			<input type="text" class="form-control half" />
+					    			<span class="jg">~</span>
+					    			<input type="text" class="form-control half" />
+						    	</span>
+								<p class="error">请输入优惠额度</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>使用时间：</span>
+								<span class="Message">
+									<input  type="text" class="form-control half time1" placeholder="开始时间"/>
+					    			<span class="jg">~</span>
+					    			<input  type="text" class="form-control half time2 "  placeholder="结束时间"/>
+						    	</span>
+								<p class="error">请输入开始时间</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠券数量：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入优惠券数量"/>
+							    	</span>
+								<p class="error">优惠券数量必须为数字</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>是否启用：</span>
+									<span class="Message">
+							    		<input type="radio" name="use" id="useOn" class="radio"/><label for="useOn">启用</label>
+							    		<input type="radio"  name="use" id="useOff" class="radio"/><label for="useOff">禁用</label>
+					   		 	   </span>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>说明：</span>
+									<span class="Message">
+							    		<textarea name="" rows="" cols="" class="form-control"></textarea>
+					   		 	   </span>
+					   		 	   <p class="error">说明输入过长</p>
+							</div>
+						</li>
+					</ul>
+					<div class="buttongroup clearfix">
+						<input type="submit" class="button_red left" value="确定"/>
+						<input type="reset" class="button_red reset right" value="取消"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery.ui.datepicker-zh-CN.js"></script>
+<script src="js/jquery-ui-timepicker-addon.js"></script>
+<script src="js/jquery-ui-timepicker-zh-CN.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		addColor();
+		$( "input.time1,input.time2" ).datetimepicker();
+	})
+
+	function addColor() {
+		var select = $("select");
+		select.on("change", function() {
+			$(this).css({
+				"color": "#555"
+			})
+		})
+	}
+  
+</script>

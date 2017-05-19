@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>店铺装修</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+	</head>
+	<body>
+		<div class="DefaultChoice popups">
+			<div class="panel">
+				<div class="panel-heading clearfix">
+					<span class="left">选择商品</span>
+					<span class="right"><i class="icon-remove"></i></span>
+				</div>
+				<div class="panel-body">
+					<form action="">
+						<div class="sort">
+							<span>筛选商品:</span>
+							<select name="" id="" class="form-control select_one">
+								<option value="">所有分类</option>
+							</select>
+							<select name="" id="" class="form-control select_two">
+								<option value="">按销量从高到低</option>
+							</select>
+							<input type="text" placeholder="输入关键词" class="form-control select_two"/>
+							<span class="price">价格</span>
+							<input type="text" class="form-control input-one" /><span class="ds">~</span><input type="text" class="form-control input-one" />
+							<input type="submit" value="搜索" class="search btn btn-default" />
+						</div>
+					</form>
+					<div class="productGroup">
+						<div class="title clearfix">
+							<span class="left">选择商品</span>
+							<i class="right icon-angle-down icon-2x"></i>
+						</div>
+						<div class="wrapduct">
+							<ul class="product-list clearfix">
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<div class="sell"><span class="haveSell">已售10笔</span></div>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<p class="sell"><span class="haveSell">已售10笔</span></p>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<p class="sell"><span class="haveSell">已售10笔</span></p>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<p class="sell"><span class="haveSell">已售10笔</span></p>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<p class="sell"><span class="haveSell">已售10笔</span></p>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+								<li class="clearfix">
+									<div class="img left">
+										<img src="images/smallpic.jpg" alt="" class="img-responsive" />
+									</div>
+									<div class="left TextDesprection">
+										<p>汽车盘式刹车片</p>
+										<p><span class="currentPrice">￥69.90</span><span class="countPrice">￥79.90</span></p>
+										<p class="sell"><span class="haveSell">已售10笔</span></p>
+									</div>
+									<div class="marks"><img src="images/mark.png" alt="" /></div>
+								</li>
+							</ul>
+							<div class="more"><a href="javascript:void(0)" class="button_red">+点击加载更多</a></div>
+						</div>
+					</div>
+					<div class="btngroup clearfix">
+						<input type="submit"  class="submit btns left" value="确定"/>
+						<input type="reset"  class="reset btns right" value="取消"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+	addStyle();
+})
+	function addStyle(){
+		var ul=$(".product-list");
+		ul.delegate("li","click",function(){
+			$(this).addClass("border").siblings("li").removeClass("border");
+			$(this).find(".marks").show().end().siblings("li").find(".marks").hide()
+		})
+	}
+</script>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>确认分类</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+	</head>
+	<body>
+		<div class="classification popups">
+			<div class="panel">
+				<div class="panel-heading clearfix">
+					<span class="left">确认分类</span>
+					<span class="right"><i class="icon-remove"></i></span>
+				</div>
+				<form action="">
+					<div class="panel-body">
+						<div class="panel-content">
+							<div class="title">
+								<span>商品分类1</span>
+							</div>
+							<ul class="sty1">
+								<li>
+									<a href="#">请选择分类<i class="icon icon-double-angle-right"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="panel-content">
+							<div class="title">
+								<span>商品分类2</span>
+							</div>
+							<ul class="sty2">
+								<li>
+									<dl>
+										<dt>收纳用具</dt>
+										<dd>垃圾桶</dd>
+										<dd>收纳包</dd>
+										<dd>收纳凳</dd>
+										
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="btngroup clearfix">
+							<input type="submit" value="保存" class="btns submit left"/>
+							<input type="reset" value="取消" class="btns reset right"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+	var up=$(".picUploader");
+	liInt(up);
+})
+function liInt(obj){//banner弹出层JS初始化
+	commander(obj);
+}//banner部分JS初始化
+
+function commander(obj){
+	var img=obj.find(".img");
+	img.hover(function(){
+		$(this).find(".picCommander").stop().fadeIn();
+	},function(){
+		$(this).find(".picCommander").stop().fadeOut();
+	})
+}//banner层上传照片提醒
+
+</script>

@@ -1,0 +1,213 @@
+.assetCommon{font-family:"黑体";}
+.assetCommon .contentDetail{width: 93%;background: #fff;padding: 15px;}
+.assetCommon .button_red{background:#f2846f;color: #fff;width: 100%;height:30px;line-height: 30px;border-radius: 5px;border: 1px solid #d55c44;margin-top: 8px;text-align: center;box-shadow: inset 0 1px 0px #fff;display: block;}
+.MyAssets .contentDetail ul.nav{border-bottom: 1px solid #e5ebf0;padding-bottom: 25px;}
+.MyAssets .contentDetail ul.nav li{float: left;}
+.MyAssets .contentDetail ul.nav li.list_Item1 .thumbnail .Text{background:#768dec;}
+.MyAssets .contentDetail ul.nav li.list_Item2 .thumbnail .Text{background:#fc6d6b;}
+.MyAssets .contentDetail ul.nav li.list_Item3 .thumbnail .Text{background: #fda473;}
+.MyAssets .contentDetail .thumbnail{border: 0;margin-bottom: 0;position: relative;width:100%;margin: 0 auto;position: relative;}
+.MyAssets .contentDetail .thumbnail .Text{position: absolute;top: 0;left: 0;width:100%;height: 100%;}
+.MyAssets .contentDetail .thumbnail .Text p{color: #fff;font-size: 18px;text-align: center;}
+.MyAssets .contentDetail  .thumbnail  img{position: relative;z-index: 1000;}
+.MyAssets .contentDetail .thumbnail .Text a{display: block;border: 1px solid #fff;border-radius:5px;width: 60%;margin: 0 auto;text-align: center;color: #fff;}
+.assetCommon .contentDetail .Table table{border-top: 1px solid #768DEC;}
+.assetCommon  h3.Title{color:#fff;font-size: 16px;height: 40px;width: 134px;background: #768dec;text-align: center;line-height: 40px;margin: 0;margin-top: 10px;}
+.assetCommon .contentDetail{-webkit-box-shadow:0 0 2px  #ccc;-moz-box-shadow:0 0 2px #ccc;box-shadow: 0 0 2px #ccc;}
+.assetCommon .contentDetail .Table thead td{background: #e3e8ff;border-bottom: 1px solid #768DEC;}
+.assetCommon .contentDetail .Table td{padding: 16px;}
+.assetCommon .contentDetail .Table tr:nth-of-type(odd){background: #f4f4f4}
+.assetCommon .contentDetail .Table tr:nth-of-type(even){background: #fff;}
+.MyAssets .contentDetail .thumbnail .Text  p.Total{font-size:18px;top: 10px;left: 0;width: 100%;text-align: center;position: absolute;z-index: 1000;}
+.MyAssets .contentDetail .thumbnail .Text  p.Money{font-size:20px;top:40%;position: absolute;left:0;text-align: center;width: 100%;z-index: 1000;}
+.MyAssets .contentDetail .thumbnail .Text a{font-size:14px;position: absolute;bottom: 20px;margin-left: -30%;left: 50%;z-index: 1000;}
+.MyAssets .contentDetail .thumbnail .Text a:hover{background:#fff;color: #33363f;border-radius: 10px;}
+.MyAssets .contentDetail  ul.nav li.list_Item1 .thumbnail  .dec{position: absolute;width: 100%;height: 100%;background:#c8d1f7 ;top:5%;left: 5%;z-index: 0;}
+.MyAssets .contentDetail  ul.nav li.list_Item2 .thumbnail  .dec{position: absolute;width: 100%;height: 100%;background:#fec5c4 ;top:5%;left: 5%;z-index: 0;}
+.MyAssets .contentDetail  ul.nav li.list_Item3 .thumbnail  .dec{position: absolute;width: 100%;height: 100%;background:#fedbc7 ;top:5%;left: 5%;z-index: 0;}
+.assetCommon .contentDetail .tableNull{width: 100%;height: 360px;border: 1px solid #768DEC;text-align: center;background: url(../images/null_03.png) no-repeat center 40px;}
+.assetCommon .contentDetail .tableNull p{width: 100%;text-align: center;font-size: 22px;color: #555;padding-top: 275px;}
+.assetCommon .table td.red{color: #f34341;font-size: 16px}
+/*保证金*/
+.MyBond h3.pdNone{margin-top: 0;}
+.MyBond .Bond{width: 100%;border: 1px solid #768DEC;height: 125px;}
+.MyBond .Bond .BondMoney{height: 90px;margin-top: 15px;}
+.MyBond .Bond .BondMoney .item{display: inline-block;vertical-align: middle;}
+.MyBond .Bond .BondMoney .item p{text-align: center;}
+.MyBond .Bond .BondMoney .item p .big{font-size: 36px;}
+.MyBond .Bond .BondMoney .item p .small{font-size: 15px;color: #899ab1;}
+.MyBond .Bond .BondMoney .bond-item1{padding: 15px 90px;border-right:1px solid  #e5ebf0;}
+.MyBond .Bond .BondMoney .bond-item2{padding-left:50px;}
+.MyBond .Bond .BondMoney .bond-item2 a{display: inline-block;border: 1px solid #4257ae;background: #768dec;color: #fff;border-radius:5px;font-size: 16px;height: 35px;width: 130px;line-height: 35px;text-align: center;}
+.MyBond .Bond .BondMoney .bond-item2 a:hover{color: #768dec;background: #fff;border: 1px solid #768dec;}
+/*保证金支付 */
+.bondPay{width: 600px;margin: 0 auto}
+.assetCommon .panel-heading{text-align: center;background: #eaeaea;font-size: 15px;}
+.assetCommon .button_red{width: 135px;height: 30px;margin: 25px auto 0px auto;}
+.bondPay *{font-size: 14px}
+.bondPay  .panel-body{border-bottom: 1px solid #e7e7e7}
+.bondPay  .panel-body h3{height: 33px;line-height: 33px;border-bottom: 1px dashed #e7e7e7;}
+.bondPay  .panel-body h3 .icon-angle-down{font-size: 20px;color: #b5b5b5;}
+.bondPay  .panel-body ul li{border-bottom: 1px solid #e7e7e7;position: relative;height: 60px;line-height: 60px;cursor: pointer;}
+.bondPay  .panel-body ul li label{display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;margin: 0;line-height: 60px;cursor: pointer;}
+.bondPay  .panel-body ul li label i.icon{display: inline-block;height: 100%;line-height: 60px;font-size:25px;color: #9bbe35}
+.bondPay  .panel-body ul li img{padding-top: 6px}
+.bondPay  .panel-body ul li input{float:right;opacity:0;filter: alpha(opacity=0);width: 0;height: 0;}
+.bondPay  .payStyle{padding-top: 0;border-bottom: 0;padding-bottom: 40px;}
+.bondPay .red{color: #f05233;font-size: 16px}
+.bondPay .wrap{width: 490px;margin: 0 auto}
+.assetCommon .commander{width: 470px;margin: 0 auto;margin-top: 45px;border: 1px solid #dae1ff;border-radius: 10px;padding: 8px 10px;}
+.assetCommon .commander dt{font-size: 12px;}
+.assetCommon.commander dt img{vertical-align: top;padding-right: 8px;}
+.assetCommon .commander dd{font-size: 12px;}
+
+/*余额支付*/
+.assetCommon .panel{border-left: 0;border-right: 0;}
+.BalancePay{width: 600px;margin: 0 auto;}
+.BalancePay *{font-size: 14px;}
+.BalancePay .red{color: #f05233;font-size: 16px;}
+.BalancePay .error{color: #f05233;}
+.BalancePay ul li{padding-top: 0;padding-bottom: 0;}
+.BalancePay ul li .listC{padding: 10px 0;}
+.BalancePay ul li .Name{display: inline-block;width: 120px;text-align: right;*display: inline;*zoom: 1; margin-right: -5px;}
+.BalancePay ul li .Message{display: inline-block;*display: inline;*zoom: 1; margin-right: -5px;position: relative;}
+.BalancePay ul li .Message .form-control{width: 300px;}
+.BalancePay ul li p.error{padding-left:120px;line-height: 14px;padding-top:10px;}
+.BalancePay ul li input.form-control{display: inline-block;margin-right: 10px;}
+.BalancePay ul li p.sendnews{padding-left: 120px;line-height: 14px;padding-top: 10px;}
+.BalancePay .code{display: inline-block;border: 1px solid #53596c;width: 92px;height: 30px;border-radius: 5px;text-align: center;}
+.BalancePay .code img{max-width: 100%;display: inline-block;vertical-align: middle;}
+
+/*添加银行卡*/
+.addCard {padding-bottom: 70px;background: #fff;}
+.addCard ul li .form-control{width: 400px;}
+.addCard ul li.imgCode .form-control{width: 220px;font-size: 14px;}
+.addCard ul li.settingDefault{height: 40px;line-height: 40px;}
+.addCard ul li label{margin: 0;font-weight:normal;}
+.addCard ul li.settingDefault{position: relative;}
+.addCard ul li.settingDefault input{position: absolute;left: 0;top: 0;width: 0;height: 0;opacity: 0;filter:alpha(opacity:0)}
+.addCard ul li.settingDefault label{margin-left:120px;cursor: pointer;}
+.addCard ul li.settingDefault label span{padding-left: 10px;}
+.addCard ul li.settingDefault .icon{font-size: 20px;vertical-align: middle;position: absolute;left: 120px;display: inline-block;height: 100%;line-height: 40px;}
+.addCard .button_red{margin: 25px 0 0 125px;}
+.addCard select{color: #b6b6b6;}
+/*编辑银行卡*/
+.editcard select{color: #555;}
+/*保证金缴纳*/
+.PayComfirm .button_red{margin: 25px 0 0 125px;}
+
+
+/*提现*/
+
+.Withdrawals .Tab {width: 270px;height: 40px;}
+.Withdrawals .Tab a{display: block;width: 50%;height: 100%;float: left;text-align: center;color: #768dec;line-height: 40px;font-size: 16px;}
+.Withdrawals .Tab a.active{background: #768dec;color: #fff;}
+.Withdrawals .Tab_list .AssetMoney{margin-top: 15px;}
+.Withdrawals .Tab_list .TotalAsset{width: 100%;border: 1px solid #768DEC;height: 125px;}
+.Withdrawals .Tab_list .TotalAsset .item{display: inline-block;vertical-align: middle;height: 90px}
+.Withdrawals .Tab_list .TotalAsset .Asset-item1{padding: 15px 5%;border-right:1px solid  #e5ebf0;}
+.Withdrawals .Tab_list .TotalAsset .Asset-item1 p{line-height: 25px}
+.Withdrawals .Tab_list .TotalAsset .item p{text-align: center;}
+.Withdrawals .Tab_list .TotalAsset .item p .big{font-size: 36px;}
+.Withdrawals .Tab_list .TotalAsset .item p .small{font-size: 15px;color: #899ab1;}
+.Withdrawals .Tab_list .TotalAsset .Asset-item2{padding: 15px 20px;border-right:1px solid  #e5ebf0;}
+.Withdrawals .Tab_list .TotalAsset .Asset-item2 p{line-height: 30px}
+.Withdrawals .Tab_list .TotalAsset .Asset-item2 p img{vertical-align: middle;padding-right: 5px;display: inline-block;}
+.Withdrawals .Tab_list .TotalAsset .Asset-item2 .default{color: #3c3c3c}
+.Withdrawals .Tab_list .TotalAsset .Asset-item3 {line-height: 90px}
+.Withdrawals .Tab_list .TotalAsset .Asset-item3 a{margin-left: 10px;background: #768dec}
+.Withdrawals .Tab_list .TotalAsset .Asset-item3 a:hover{background: #fff;color: #768dec}
+.Withdrawals .Tab_list  .list-group{background: #f4f6fe;margin-top: 15px}
+.Withdrawals .Tab_list1 .form .list-group li{background:#f4f6fe ;}
+.Withdrawals .form ul li{padding: 0}
+.Withdrawals .form ul li .listC{padding: 10px 0;}
+.Withdrawals .form ul li .listC *{font-size: 14px}
+.Withdrawals .form ul li .Name{display: inline-block;width: 100px;text-align: right;*display: inline;*zoom: 1; margin-right: -5px;}
+.Withdrawals .form ul li .Message{display: inline-block;*display: inline;*zoom: 1; margin-right: -5px;position: relative;width: 40%}
+.Withdrawals .form ul li .Message .form-control{width: 80%;display: inline-block;}
+.Withdrawals .form ul li  p.error{padding-left:105px;line-height: 14px;padding-top:10px;color: #f05233}
+.Withdrawals .form ul li.Password .form-control{width: 40%;}
+.Withdrawals .error{color: #f05223}
+.Withdrawals .select .btn{width: 80%;text-align: left;position: relative;}
+.Withdrawals .select .btn img{padding-right: 5px;vertical-align: middle;display: inline-block;}
+.Withdrawals .select .btn .icon-angle-down{display: inline-block;vertical-align:middle;position: absolute;right:5px;top: 0;height: 100%;line-height: 34px}
+.Withdrawals .select .btn  *{display: inline-block;vertical-align: middle;}
+.Withdrawals .select ul{width: 80%;padding:0;}
+.Withdrawals .select ul li{cursor: pointer;border-bottom: 1px solid #dedede;padding: 5px}
+.Withdrawals .select ul li *{display: inline-block;vertical-align: middle;}
+.Withdrawals .select ul li img{vertical-align: middle;padding: 0px 5px 0 5px}
+.Withdrawals .button_red{margin: 30px 0 100px 100px;font-size: 14px;}
+.Withdrawals .contentDetail  .Table thead th{background: #e3e8ff;border-bottom: 1px solid #768DEC;padding-top: 16px;padding-bottom: 16px;}
+.Withdrawals .contentDetail  .Table  tr{padding-top: 16px;padding-bottom: 16px;}
+.Withdrawals .contentDetail .percent-2{width: 20%;}
+.Withdrawals .contentDetail .percent-3{width: 30%;}
+.Withdrawals .contentDetail .ListNull{width: 100%;height: 360px;border: 1px solid #768DEC;text-align: center;background: url(../images/null_03.png) no-repeat center 40px;}
+.Withdrawals .contentDetail .ListNull p{width: 100%;text-align: center;font-size: 22px;color: #555;padding-top: 275px;}
+
+/*忘记密码*/
+.getSecret h3.Title{margin-top:0;}
+.getSecret .step{border-top: 1px solid #768dec;border-bottom: 1px solid #e5ebf0;padding: 30px  0 30px 0;}
+.getSecret .step .stepimg{width: 560px;height:62px ;margin: 0 auto;background:url(../images/step.png) no-repeat 0 0;}
+.getSecret .step ul{width: 560px;margin: 0 auto;}
+.getSecret .step ul li{float: left;text-align: center;font-size: 15px;line-height: 15px;padding-top: 10px;width: 33.33%;padding-left: 2px;}
+.getSecret .step ul li.margin_none{margin-left: 0;}
+.getSecret .step ul li.step_1{text-align: left;}
+.getSecret .step ul li.step_3{text-align: right;}
+.getSecret .step ul li.active{color:#768dec;}
+.getSecret .form{font-size: 14px;}
+.getSecret .form ul{width: 560px;margin: 0 auto;padding-top: 18px;}
+.getSecret .form ul li {border:0;padding: 0;}
+.getSecret .form ul li .listC{padding: 10px 0;}
+.getSecret .form ul li .Name{display: inline-block;width: 120px;text-align: right;*display: inline;*zoom: 1; margin-right: -5px;}
+.getSecret .form ul li .Message{display: inline-block;*display: inline;*zoom: 1; margin-right: -5px;position: relative;}
+.getSecret .form ul li .Message .form-control{width: 220px;}
+.getSecret .form ul li .Message .phone{width: 400px;}
+.getSecret .form ul li p.error{padding-left:120px;line-height: 14px;padding-top:10px;}
+.getSecret .form ul li input.form-control{display: inline-block;margin-right: 10px;}
+.getSecret .form ul li p.sendnews{padding-left: 120px;line-height: 14px;padding-top: 10px;}
+.getSecret .form ul li .code{display: inline-block;border: 1px solid #53596c;width: 92px;height: 32px;border-radius: 5px;text-align: center;}
+.getSecret .form ul li .code img{max-width: 100%;display: inline-block;vertical-align: middle;}
+.getSecret .form ul li .button_red{margin: 50px 0px 50px 120px;}
+.getSecret .error{color: #f05223}
+
+/*设置支付密码*/
+.settingSecret .step .stepimg{background:url(../images/step.png) no-repeat 0 -62px;}
+/*密码找回*/
+.successSecret .step .stepimg{background:url(../images/step.png) no-repeat 0 -124px;}
+.successSecret .success{width: 100%;height: 230px;background: url(../images/ok.png) no-repeat center 45px;}
+.successSecret .success p{text-align: center;font-size: 20px;line-height: 20px;padding-top: 150px;}
+/*我的银行卡*/
+.MyBankCard .contentDetail{padding-bottom: 100px;}
+.MyBankCard h3.Title{margin-top: 0;}
+.MyBankCard .cardList{border-top: 1px solid #768dec;}
+.MyBankCard .cardList dl{padding-top: 15px}
+.MyBankCard .cardList dt{height: 134px;padding: 0;margin: 10px 0px 0 0;}
+.MyBankCard .cardList dt a{width: 95%;height: 100%;display: block;background:url(../images/addCard_03.png) no-repeat center 30px;text-align: center;font-weight: normal;border-radius: 10px;border:1px solid #b3bbc1;margin: 0 auto;}
+.MyBankCard .cardList dt a span{font-size: 16px;padding-top:90px;text-align: center;display: block;}
+.MyBankCard .cardList dd{height: 134px;margin: 10px 0px 0 0;padding: 0;}
+.MyBankCard .cardList dd div.bank_list{height: 100%;width: 95%;border:1px solid #b3bbc1;border-radius: 10px;margin: 0 auto;}
+.MyBankCard .cardList dd ul{width: 90%;margin: 0 auto;}
+.MyBankCard .cardList dd li{zoom: 1;overflow: hidden;border-bottom: 1px dashed #b5bcc2;padding: 7px 0;position: relative;}
+.MyBankCard .cardList dd li span{display: inline-block;vertical-align: middle;}
+.MyBankCard .cardList dd li {font-size:14px;color:#768dec;}
+.MyBankCard .cardList dd li img{vertical-align: middle;}
+.MyBankCard .cardList dd li .bankName{display: inline-block;vertical-align: middle;width: 85%;}
+.MyBankCard .cardList dd li i{height: 100%;color: #899cef;display: inline-block;vertical-align: baseline;cursor: pointer;}
+.MyBankCard .cardList dd li.bordernone{border-bottom: 0;}
+.MyBankCard .cardList dd li.bordernone .blue{background: #768dec;color: #fff;}
+.MyBankCard .cardList dd li.bordernone a{font-size: 14px;}
+.MyBankCard .cardList dd li span.text{width: 70%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.MyBankCard .cardList dd li.bordernone .settingDefault.active{background: #556dd0;}
+
+/** 修改密码 **/
+.getSecret .form ul li p.sendnews .time{
+	color:#f2846f;
+}
+
+.successSecret .success .links{
+	text-align: center;
+}
+.successSecret .success .links > a{
+	display: inline-block;
+	margin: 25px 10px;
+}

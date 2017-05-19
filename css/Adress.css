@@ -1,0 +1,15 @@
+.ReceiptAddress {font-family: "黑体";}
+.ReceiptAddress .Middle{background: #fff;padding: 10px;}
+.ReceiptAddress .Middle *{font-size: 15px;}
+.ReceiptAddress .Middle .Title {border-bottom: 1px solid #768dec;}
+.ReceiptAddress .Middle .Title h3{background: #768dec;font-size: 16px;color: #fff;width: 135px;height: 40px;line-height: 40px;text-align: center;}
+.ReceiptAddress .Middle .NumTotal{padding-top: 10px;}
+.ReceiptAddress .Middle .NumTotal i.gray{color: #999;padding-right: 10px;}
+.ReceiptAddress .Middle .list-group-item{border:1px solid #cacaca;border-left: 10px solid #768DEC ;border-radius: 0;margin-top: 20px;position: relative;}
+.ReceiptAddress .Middle .list-group-item img{vertical-align: middle;display: inline-block;}
+.ReceiptAddress .Middle .list-group-item span{display: inline-block;vertical-align: middle;}
+.ReceiptAddress .Middle .list-group-item .btn{background: #b1b1ff;color: #fff;font-size: 14px;}
+.ReceiptAddress .Middle .list-group-item .redbg{width: 140px;height: 30px;background: url(../images/redbg.png) no-repeat 0 0;position: absolute;top: 5px;right: 20px;}
+.ReceiptAddress .Middle .list-group-item .redbg a{display: inline-block;width: 50%;height: 100%;*display: inline;*zoom: 1;color: #fff;text-align: center;line-height: 30px;position: relative;z-index: 500;}
+.ReceiptAddress .Middle .list-group-item .redbg .active{background: url(../images/whitebg.png) no-repeat 0 0;position: absolute;left: 50%;top: 0;height: 30px;width: 70px;z-index: 0;}
+

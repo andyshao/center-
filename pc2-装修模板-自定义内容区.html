@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>店铺装修</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+		<link rel="stylesheet" type="text/css" href="dist/css/wangEditor.min.css">
+	</head>
+	<body>
+		<div class="popups DecorationEdit">
+			<div class="panel">
+				<div class="panel-heading clearfix">
+						<span class="left">自定义内容区</span>
+						<span class="right"><i class="icon-remove"></i></span>
+				</div>
+				<form action="">
+				<div class="panel-body">
+					<div class="panel-content">
+						<div class="title">
+							<span>编辑模块</span>
+						</div>
+						<div class="EditContent">
+							<div id="editor-trigger"></div>
+						</div>
+					</div>
+					<div class="btngroup clearfix">
+							<input type="submit" value="保存" class="btns submit left"/>
+							<input type="reset" value="取消" class="btns reset right"/>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="dist/js/wangEditor.js"></script>
+<script type="text/javascript">
+$(function(){
+	editor1("editor-trigger");
+})
+	function editor1(obj) {
+		var editor = new wangEditor(obj);
+
+		// 上传图片
+		editor.config.uploadImgUrl = '/upload';
+		editor.config.uploadParams = {
+			// token1: 'abcde',
+			// token2: '12345'
+		};
+		editor.config.uploadHeaders = {
+			// 'Accept' : 'text/x-json'
+		}
+
+		editor.config.emotionsShow = 'value';
+		editor.config.emotions = {
+			'default': {
+				title: '默认',
+				data: './emotions.data'
+			},
+			'weibo': {
+				title: '微博表情',
+				data: [{
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/7a/shenshou_thumb.gif',
+					value: '[草泥马]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/60/horse2_thumb.gif',
+					value: '[神马]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/bc/fuyun_thumb.gif',
+					value: '[浮云]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/c9/geili_thumb.gif',
+					value: '[给力]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/f2/wg_thumb.gif',
+					value: '[围观]'
+				}, {
+					icon: 'http://img.t.sinajs.cn/t35/style/images/common/face/ext/normal/70/vw_thumb.gif',
+					value: '[威武]'
+				}]
+			}
+		};
+
+		editor.create();
+	}
+</script>

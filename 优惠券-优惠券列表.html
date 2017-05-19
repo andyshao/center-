@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="CouponList common shopList">
+			<div class="panel panel-default">
+				<div class="panel-heading shopTitle">优惠券列表</div>
+				<div class="panel-body clearfix">
+					<div class="buttongroup left">
+						<button type="button" class="btn btn-default"><i class="icon-refresh"></i> 刷新</button>
+						<a type="button" class="btn btn-default" href="优惠券-优惠券列表-查询.html"><i class="icon-search"></i> 查询</a>
+					</div>
+					<form class="navbar-form right clearfix" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control Text" placeholder="请输入券号">
+						</div>
+						<button type="submit" class="submit btn"></button>
+						<input type="reset" class="btn reset">
+					</form>
+				</div>
+				<div class="table-responsive Table">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>会员名称</th>
+								<th>使用状态</th>
+								<th>领券时间</th>
+								<th>券号</th>
+								<th>激活状态</th>
+								<th>实际优惠金额</th>
+								<th>使用情况</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>13222222222</td>
+								<td>未使用</td>
+								<td>2016-08-01</td>
+								<td>0000001</td>
+								<td>已激活</td>
+								<td></td>
+								<td class="percent-2">XXX订单中使用优惠券，优惠金额5元</td>
+							</tr>
+							<tr>
+								<td>13222222222</td>
+								<td>未使用</td>
+								<td>2016-08-01</td>
+								<td>0000001</td>
+								<td>已激活</td>
+								<td></td>
+								<td>选择</td>
+							</tr>
+							<tr>
+								<td>13222222222</td>
+								<td>未使用</td>
+								<td>2016-08-01</td>
+								<td>0000001</td>
+								<td>已激活</td>
+								<td></td>
+								<td>选择</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="center">
+				<ul class="pagination">
+					<li>
+						<span href="#">上一页</span>
+					</li>
+					<li class="active">
+						<a class="active" href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<span href="#">下一页</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		Table();
+		pagation();
+	})
+</script>

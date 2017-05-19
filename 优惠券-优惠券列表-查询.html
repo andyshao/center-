@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="layer/layer.js"></script>
+	</head>
+
+	<body>
+		<div class="common CouponEdit">
+			<form action="">
+				<div class="panel panel-default form">
+					<div class="panel-heading shopTitle">查询优惠券</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>会员名称：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入名称"/>
+							    	</span>
+								<p class="error">名称输入过长</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>使用状态：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择使用状态</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>领券时间：</span>
+								<span class="Message">
+									<input  type="text" class="form-control half time1" placeholder="开始时间"/>
+					    			<span class="jg">~</span>
+					    			<input  type="text" class="form-control half time2 "  placeholder="结束时间"/>
+						    	</span>
+								<p class="error">请输入开始时间</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>券号：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入券号"/>
+							    	</span>
+								<p class="error">券号输入过长</p>
+							</div>
+						</li>
+						<li class="list-group-item ">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>激活状态：</span>
+								<span class="Message">
+							    		<select name="" id="" class="form-control">
+							    			<option value="" selected="" disabled="">--请选择--</option>
+							    			<option value="">11111</option>
+							    		</select>
+							    	</span>
+								<p class="error">请选择激活状态</p>
+							</div>
+						</li>
+						<li class="list-group-item">
+							<div class="listC">
+								<span class="Name"><i class="red">*</i>优惠金额：</span>
+								<span class="Message">
+							    		<input type="text" class="form-control" placeholder="请输入名称"/>
+							    	</span>
+								<p class="error">请输入优惠金额</p>
+							</div>
+						</li>
+					</ul>
+					<div class="buttongroup clearfix">
+						<input type="submit" class="button_red left" value="确定" />
+						<input type="reset" class="button_red reset right" value="取消"/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery.ui.datepicker-zh-CN.js"></script>
+<script src="js/jquery-ui-timepicker-addon.js"></script>
+<script src="js/jquery-ui-timepicker-zh-CN.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		addColor();
+		$( "input.time1,input.time2" ).datetimepicker();
+	})
+
+	function addColor() {
+		var select = $("select");
+		select.on("change", function() {
+			$(this).css({
+				"color": "#555"
+			})
+		})
+	}
+  
+</script>

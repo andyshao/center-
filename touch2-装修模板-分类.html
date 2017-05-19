@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>店铺装修</title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+		<link rel="stylesheet" href="css/metroStyle/metroStyle.css" />
+	</head>
+	<body>
+		<div class="classicDefault popups">
+			<div class="panel">
+				<div class="panel-heading clearfix head-phbg">
+					<span class="left">编辑分类</span>
+					<span class="right"><i class="icon-remove-sign"></i></span>
+				</div>
+				<form action="">
+				<div class="panel-body">
+					<div class="choices">
+						请选择要添加的分类 <i class="icon-caret-down"></i>
+					</div>
+					<div class="zTreeDemoBackground ">
+						<ul id="treeDemo" class="ztree"></ul>
+					</div>
+					<div class="btngroup clearfix">
+						<input type="submit"  class="submit btns left orange" value="确定"/>
+						<input type="reset"  class="reset btns right" value="取消"/>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.ztree.core.min.js"></script>
+<script src="js/jquery.ztree.excheck.min.js"></script>
+<SCRIPT type="text/javascript">
+		<!--
+		function classicInt(){
+			var zNodes =[
+			{ id:1, pId:0, name:"随意勾选 1", open:true},
+			{ id:11, pId:1, name:"随意勾选 1-1", open:true},
+			{ id:111, pId:11, name:"随意勾选 1-1-1"},
+			{ id:112, pId:11, name:"随意勾选 1-1-2"},
+			{ id:12, pId:1, name:"随意勾选 1-2", open:true},
+			{ id:121, pId:12, name:"随意勾选 1-2-1"},
+			{ id:122, pId:12, name:"随意勾选 1-2-2"},
+			{ id:2, pId:0, name:"随意勾选 2", open:true},
+			{ id:21, pId:2, name:"随意勾选 2-1"},
+			{ id:22, pId:2, name:"随意勾选 2-2", open:true},
+			{ id:221, pId:22, name:"随意勾选 2-2-1"},
+			{ id:222, pId:22, name:"随意勾选 2-2-2"},
+			{ id:23, pId:2, name:"随意勾选 2-3"},
+			{ id:3, pId:0, name:"随意勾选 3", open:true},
+			{ id:31, pId:3, name:"随意勾选 3-1"},
+			{ id:32, pId:3, name:"随意勾选 3-2", open:true},
+			{ id:321, pId:33, name:"随意勾选 3-2-1"},
+			{ id:322, pId:33, name:"随意勾选 3-2-2"},
+			{ id:33, pId:3, name:"随意勾选 3-3"}
+		];
+		var setting = {
+			check: {
+				enable: true
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			}
+		};
+		$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+		}
+$(function(){
+	classicInt();
+})
+	</SCRIPT>

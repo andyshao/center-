@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="layer/layer.js"></script>
+	</head>
+	<body>
+		<div class="common RefundQuery PopupsCommon">
+			<div class="panel">
+				<div class="panel-heading shopTitle">查询</div>
+				<form action="">
+					<div class="panel-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<div class="listC">
+									<span class="Name"><i class="red">*</i>订单编号：</span>
+									<span class="Message">
+								    		<input type="text" class="form-control" placeholder="请输入订单编号"/>
+								    	</span>
+									<p class="error">订单号规则不正确</p>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="listC">
+									<span class="Name"><i class="red">*</i>退款编号：</span>
+									<span class="Message">
+								    		<input type="text" class="form-control" placeholder="请输入退款编号"/>
+								    	</span>
+									<p class="error">退款编号规则不正确</p>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="listC">
+									<span class="Name"><i class="red">*</i>卖家：</span>
+									<span class="Message">
+								    		<input type="text" class="form-control" placeholder="请输入买家名称"/>
+								    </span>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="listC">
+									<span class="Name"><i class="red">*</i>退款状态：</span>
+									<span class="Message">
+								    	<select name="" id="" class="form-control">
+								    		<option value="" disabled="" selected="" >请选择</option>
+								    	</select>
+								    </span>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="listC">
+									<span class="Name"><i class="red">*</i>退款申请时间：</span>
+									<span class="Message">
+								    	<select name="" id="" class="form-control">
+								    		<option value="" disabled="" selected="" >请选择</option>
+								    	</select>
+								    </span>
+								</div>
+							</li>
+						</ul>
+						<div class="buttongroup clearfix">
+							<input type="submit" class="button_red left" value="确定"/>
+							<input type="reset" class="button_red reset right" value="取消"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/placeholder.js"></script>
+<script>
+$(function(){
+	$('input, textarea').placeholder();
+})
+</script>

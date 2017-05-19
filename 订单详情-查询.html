@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="layer/layer.js"></script>
+	<script src="js/city2.js"></script>
+	<script src="js/citySelect2.js"></script>
+	<script src="laydate/laydate.js"></script>
+	</head>
+	<body>
+		<div class="common orderSearch">
+			<div class="panel panel-default">
+				<div class="panel-heading shopTitle">查询</div>
+				<form action="">
+				<div class="panel-body">
+					<ul class="list-group">
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">订单号：</span>
+								<span class="Message"><input type="text" class="form-control" placeholder="请输入订单号"/></span>
+								<p class="error">订单号规则不正确</p>
+							</div>
+							<div class="listC left">
+								<span class="Name">订单状态：</span>
+								<span class="Message">
+									<select name="" id="" class="form-control">
+										<option value="" disabled="" selected="">--请选择--</option>
+									</select>
+								</span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">订单总额：</span>
+								<span class="Message"><input type="text" class="form-control half"/><span class="des">~</span><input type="text" class="half form-control" /></span>
+							</div>
+							<div class="listC left">
+								<span class="Name">商品总额：</span>
+								<span class="Message"><input type="text" class="form-control half"/><span class="des">~</span><input type="text" class="half form-control" /></span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">优惠总额：</span>
+								<span class="Message"><input type="text" class="form-control half"/><span class="des">~</span><input type="text" class="half form-control" /></span>
+							</div>
+							<div class="listC left">
+								<span class="Name">运费：</span>
+								<span class="Message"><input type="text" class="form-control half"/><span class="des">~</span><input type="text" class="half form-control" /></span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">下单时间：</span>
+								<span class="Message"><input type="text" class="form-control half" id="start" placeholder="开始时间"/><span class="des">~</span><input type="text" class="half form-control" id="end" placeholder="结束时间"/></span>
+							</div>
+							<div class="listC left">
+								<span class="Name">付款时间：</span>
+								<span class="Message"><input type="text" class="form-control half" id="start2" placeholder="开始时间"/><span class="des">~</span><input type="text" class="half form-control" id="end2" placeholder="结束时间"/></span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">运单号：</span>
+								<span class="Message"><input type="text" class="form-control" placeholder="请输入运单号"/></span>
+								<p class="error">运单号规则不正确</p>
+							</div>
+							<div class="listC left">
+								<span class="Name">承运人：</span>
+								<span class="Message">
+									<select name="" id="" class="form-control">
+										<option value="" disabled="" selected="">--请选择--</option>
+									</select>
+								</span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">收货人：</span>
+								<span class="Message"><input type="text" class="form-control" placeholder="请输入收货人"/></span>
+								<p class="error">运单号规则不正确</p>
+							</div>
+							<div class="listC left">
+								<span class="Name">收货地址：</span>
+								<span class="Message">
+									<select type="text" class="form-control three" id="prov"/></select>
+									<select type="text" class="form-control three" id="city"/></select>
+									<select type="text" class="form-control three" id="dist"/></select>
+								</span>
+							</div>
+						</li>
+						<li class="list-group-item clearfix">
+							<div class="listC left lp">
+								<span class="Name">卖家留言：</span>
+								<span class="Message"><input type="text" class="form-control"></span>
+							</div>
+							<div class="listC left">
+								<span class="Name">取消订单原因：</span>
+								<span class="Message">
+									<select name="" id="" class="form-control">
+										<option value="" disabled="" selected="">--请选择--</option>
+									</select>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<div class="button-group clearfix">
+						<input type="submit" value="查询" class="left button_red"/>
+						<input type="submit" value="取消" class="right button_red cancles"/>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	// 省市区3及联动
+	$(function() {
+		var selectVal = new CitySelect({
+			data: data,
+			provId: "#prov",
+			cityId: '#city',
+			areaId: '#dist',
+			isSelect: false
+		});
+		select();
+	})
+</script>
+<script>
+var time={
+ start:{
+	  elem: '#start',
+	  format: 'YYYY/MM/DD hh:mm:ss',
+	  min: laydate.now(), //设定最小日期为当前日期
+	  max: '2099-06-16 23:59:59', //最大日期
+	  istime: true,
+	  istoday: false,
+	  choose: function(datas){
+	     end.min = datas; //开始日选好后，重置结束日的最小日期
+	     end.start = datas //将结束日的初始值设定为开始日
+	  }
+	},
+end:{
+  elem: '#end',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(),
+  max: '2099-06-16 23:59:59',
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+    start.max = datas; //结束日选好后，重置开始日的最大日期
+  }
+},
+start2:{
+  elem: '#start2',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(), //设定最小日期为当前日期
+  max: '2099-06-16 23:59:59', //最大日期
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+     end.min = datas; //开始日选好后，重置结束日的最小日期
+     end.start = datas //将结束日的初始值设定为开始日
+  }
+},
+end2:{
+  elem: '#end2',
+  format: 'YYYY/MM/DD hh:mm:ss',
+  min: laydate.now(),
+  max: '2099-06-16 23:59:59',
+  istime: true,
+  istoday: false,
+  choose: function(datas){
+    start.max = datas; //结束日选好后，重置开始日的最大日期
+  }
+}
+}
+function select(){
+	$("select").change(function(){
+		$(this).css({"color":"#555"})
+	})
+}
+laydate(time.start);
+laydate(time.end);
+laydate(time.start2);
+laydate(time.end2);
+</script>
+    

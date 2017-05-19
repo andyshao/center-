@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="stockGoods common shopList">
+			<div class="panel panel-default">
+				<div class="panel-heading shopTitle">商品库商品选择</div>
+				<div class="panel-body clearfix">
+					<div class="buttongroup left">
+						<a type="button" class="btn btn-default" href="商品库商品选择页－精确查询.html"><i class="icon-search"></i>查询</a>
+						<button type="button" class="btn btn-default"><i class="icon-refresh"></i>刷新</button>
+						<button type="button" class="btn btn-default"><i class="icon-check"></i>选择</button>
+					</div>
+					<form class="navbar-form right clearfix" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control Text" placeholder="请输入商品名称">
+						</div>
+						<button type="submit" class="submit btn"></button>
+						<input type="reset" class="btn reset">
+					</form>
+				</div>
+				<div class="table-responsive Table">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th></th>
+								<th>商品编号</th>
+								<th>商品名称</th>
+								<th>商品分类</th>
+								<th>商品品牌</th>
+								<th>商品特征项</th>
+								<th>商品特征值</th>
+								<th>上下架状态</th>
+								<th>自动更新状态</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							<td>
+								<input type="checkbox">
+							</td>
+							<td>1</td>
+							<td>Iphone5S</td>
+							<td>手机</td>
+							<td>苹果</td>
+							<td>机型</td>
+							<td>Iphone5S</td>
+							<td>上架</td>
+							<td>开启</td>
+							<td>
+								<a class="red" href="#">选择</a> |
+								<a class="delete" href="商品库商品选择页－查看.html">查看</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox">
+							</td>
+							<td>1</td>
+							<td>Iphone5S</td>
+							<td>手机</td>
+							<td>苹果</td>
+							<td>机型</td>
+							<td>Iphone5S</td>
+							<td>上架</td>
+							<td>开启</td>
+							<td>
+								<a class="red" href="#">选择</a> |
+								<a class="delete" href="商品库商品选择页－查看.html">查看</a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="checkbox">
+							</td>
+							<td>1</td>
+							<td>Iphone5S</td>
+							<td>手机</td>
+							<td>苹果</td>
+							<td>机型</td>
+							<td>Iphone5S</td>
+							<td>上架</td>
+							<td>开启</td>
+							<td>
+								<a class="red" href="#">选择</a> |
+								<a class="delete" href="商品库商品选择页－查看.html">查看</a>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="center">
+				<ul class="pagination" >
+					<li>
+						<span href="#">上一页</span>
+					</li>
+					<li class="active">
+						<a class="active" href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<span href="#">下一页</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+		$('input, textarea').placeholder();
+		Table();
+		pagation();
+	})
+
+</script>

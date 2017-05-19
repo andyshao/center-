@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/sub.css" />
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/city2.js"></script>
+		<script src="js/citySelect2.js"></script>
+	</head>
+
+	<body>
+		<div class="common ApplyChange">
+			<div class="header">
+				<ul>
+					<li>
+						<a href="" title="首页"><i class="icon-home"></i></a>
+					</li>
+					<li>
+						<a href="" title="我的账户 "><i class="icon-user"></i></a>
+					</li>
+					<li>
+						<a href="" title="修改密码"><i class="icon-lock"></i></a>
+					</li>
+					<li class="none">
+						<a href="" title="退出"><i class="icon-off"></i></a>
+					</li>
+				</ul>
+			</div>
+			<!--以上为头部-->
+			<div class="menu">
+				<div class="title">
+					<a href="">企业会员中心！</a>
+				</div>
+				<ul class="nav nav-stacked " role="navigation">
+					<li>
+						<a href="#" class="Title toggles" data-toggle="collapse" data-target="#myCollapse">
+							<i><img src="images/m1.png" alt="" /></i>
+							<span>账户信息</span>
+							<i class="icon-angle-down icon "></i>
+						</a>
+						<div class="collapse" id="myCollapse">
+							<ul class=" nav nav-stacked " style="">
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m2.png" alt="" /></i>
+										<span>我的信息</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m3.png" alt="" /></i>
+										<span>修改密码</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m4.png" alt="" /></i>
+										<span>发货地址</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m5.png" alt="" /></i>
+										<span>合同维护</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m6.png" alt="" /></i>
+										<span>商品评论<i class="red">（300条）</i></span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m7.png" alt="" /></i>
+										<span>账户余额<i class="red">（￥23.00）</i></span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m8.png" alt="" /></i>
+										<span>提现</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="Title toggles" data-toggle="collapse" data-target="#myCollapse2">
+							<i><img src="images/m9.png" alt="" /></i>
+							<span>商品管理</span>
+							<i class="icon-angle-down icon"></i>
+						</a>
+						<div class="collapse" id="myCollapse2">
+							<ul class=" nav nav-stacked">
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m10.png" alt="" /></i>
+										<span>商品发布</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m11.png" alt="" /></i>
+										<span>出售中的商品</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m12.png"/></i>
+										<span>仓库中的商品</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="Title toggles" data-toggle="collapse" data-target="#myCollapse3">
+							<i><img src="images/m13.png" alt="" /></i>
+							<span>交易管理</span>
+							<i class="icon-angle-down icon"></i>
+						</a>
+						<div class="collapse" id="myCollapse3">
+							<ul class=" nav nav-stacked">
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m14.png"/></i>
+										<span>退货申请列表</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m15.png" alt="" /></i>
+										<span>退换货列表</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m16.png" alt="" /></i>
+										<span>卖出订单</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m17.png" alt="" /></i>
+										<span>对账单</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="Title toggles" data-toggle="collapse" data-target="#myCollapse4">
+							<i><img src="images/m18.png" alt="" /></i>
+							<span>商铺管理</span>
+							<i class="icon-angle-down icon"></i>
+						</a>
+						<div class="collapse" id="myCollapse4">
+							<ul class=" nav nav-stacked">
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m19.png"/></i>
+										<span>商铺入驻</span>
+									</a>
+								</li>
+								<li>
+									<a href="" target="_blank">
+										<i><img src="images/m20.png" alt="" /></i>
+										<span>加盟商列表</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="Title" target="_blank">
+							<i><img src="images/m21.png" alt="" /></i>
+							<span>营销管理</span>
+							<i class="icon icon-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="Title" target="_blank">
+							<i><img src="images/m22.png" alt="" /></i>
+							<span>客户管理</span>
+							<i class="icon icon-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="Title" target="_blank">
+							<i><img src="images/m23.png" alt="" /></i>
+							<span>客户维护</span>
+							<i class="icon icon-angle-right"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--以上菜单栏-->
+			<div class="Content">
+				<div class="container-fluid wrap2">
+					<ol class="breadcrumb clearfix">
+						<li>
+							<a href="index.html" target="_blank">企业会员中心</a>
+						</li>
+						<li class="active">资质变更</li>
+					</ol>
+					<!--以上为面包屑-->
+					<form action="资质变更.html" id="Form">
+						<div class="list_Item margin_none">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		联系人信息
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+							</div>
+							<ul class="Detail">
+								<li>
+									<span class="list_Title"><i class="red">*</i>联系人：</span>
+									<input type="text" class="form-control" placeholder="请输入联系人姓名" name="ContactName" id="ContactName" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>联系人手机：</span>
+									<input type="text" class="form-control" placeholder="请输入手机号码" name="telPhone" id="telPhone" />
+								</li>
+								<li>
+									<span class="list_Title">联系人电话：</span>
+									<input type="text" class="form-control" placeholder="请输入联系人电话" name="phone" id="phone" />
+								</li>
+								<li>
+									<span class="list_Title">联系人邮箱：</span>
+									<input type="text" class="form-control" placeholder="请输入联系人邮箱" name="email" id="email" />
+								</li>
+							</ul>
+						</div>
+						<div class="list_Item">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		企业信息
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+							</div>
+							<ul class="Detail">
+								<li>
+									<span class="list_Title">账号：</span>
+									<input type="text" class="form-control" readonly="" / value="19321111111">
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>名称：</span>
+									<input type="text" class="form-control" placeholder="请输入公司名称" id="CompanyName" name="CompanyName" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>法人姓名：</span>
+									<input type="text" class="form-control" placeholder="请输入法人姓名" id="LegalName" name="LegalName" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>法人身份证：</span>
+									<input type="text" class="form-control" placeholder="请输入法人身份证号" id="LegalCard" name="LegalCard" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>开户银行：</span>
+									<span class="icon_down bank_select">
+								 		<select  class="form-control appearance" name="bank" >
+								 			<option value="1" disabled selected>请选择开户银行</option>
+								 			<option value="2">瑞士银行</option>
+								 			<option value="3">瑞士银行2</option>
+								 		</select>
+								 		<i class="icon-caret-down"></i>
+							 		</span>
+								</li>
+								<li>
+									<span class="list_Title">开户支行：</span>
+									<input type="text" class="form-control" placeholder="请输入开户支行" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>开户姓名：</span>
+									<input type="text" class="form-control" placeholder="请输入开户姓名" id="AccountName" name="AccountName" />
+								</li>
+								<li>
+									<span class="list_Title"><i class="red">*</i>银行卡号：</span>
+									<input type="text" class="form-control" placeholder="请输入银行卡号" id="bankCard" name="bankCard" />
+								</li>
+								<li class="Area" id="demo">
+									<span class="list_Title"><i class="red">*</i>地址：</span>
+									<span class="icon_down">
+								 		<select name="prov"  class="form-control appearance " style="margin-left:0" id="prov">
+								 				
+								 		</select>
+								 		<i class="icon-caret-down"></i>
+							 		</span>
+									<span class="icon_down">
+							 			<select name="city"  class="form-control appearance"  id="city">
+							 				
+							 			</select>
+							 			<i class="icon-caret-down"></i>
+							 		</span>
+									<span class="icon_down erroplace">
+							 			<select name="dist"  class="form-control appearance"  id="dist">
+							 		
+							 			</select>
+							 			<i class="icon-caret-down"></i>
+							 		</span>
+									<p>
+										<span class="list_Title">详细地址：</span>
+										<input type="text" class="form-control" placeholder="请输入详细地址	" />
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div class="list_Item nopadding">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		企业经营类型
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+							</div>
+							<div class="list-group selectClassic">
+								<div class="list-group-item dt">
+									<span class="title">请选择您的经营类型：</span>
+									<button type="button" class="btn btn-danger showDown right">请选择<span class="icon-caret-down icon"></span></button>
+									<div class="clearfix"></div>
+								</div>
+								<div class="contentText"></div>
+								<div class="showwrap" style="display: none;">
+									<div class="list-group-item dd">
+										<span class="red"><input type="checkbox" class="checkAll" id="All1"/><i>计算机/互联网/电子/通讯：</i></span>
+										<div class="dropdown">
+											<a href="javscript:void(0)" class=" dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"><input type="checkbox" class="checkSub" id="Sub1" /><span class="allName">计算机硬件</span> <i class="caret"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c1" /><label for="c1">高级软件工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c2" /><label for="c2">高级软件工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c3" /><label for="c3">高级软件工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c4" /><label for="c4">高级软件工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c5" /><label for="c5">前端开发工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c6" /><label for="c6">需求工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c7" /><label for="c7">PHP开发工程师</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c8" /><label for="c8">需求工程师</label></a>
+												</li>
+												<li role="presentation" class="comlete">
+													<button class="btn btn-default" type="button">关闭</button>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown">
+											<a href="javscript:void(0)" class=" dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown"><input type="checkbox" class="checkSub" id="Sub2" /><span class="allName">计算机软件</span> <i class="caret"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c9" /><label for="c9">高级软件工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c10" /><label for="c10">软件工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c11" /><label for="c11">算法工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c12" /><label for="c12">算法工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c13" /><label for="c13">前端开发工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c14" /><label for="c14">需求工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c15" /><label for="c15">PHP开发工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c16" /><label for="c16">需求工程师2</label></a>
+												</li>
+												<li role="presentation" class="comlete">
+													<button class="btn btn-default" type="button">关闭</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="list-group-item dd">
+										<span class="red"><input type="checkbox" class="checkAll" id="All2" /><i>生产/营运/采购/物流：</i></span>
+										<div class="dropdown">
+											<a href="javscript:void(0)" class=" dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown"><input type="checkbox" class="checkSub" id="Sub3" /><span class="allName">计算机硬件</span> <i class="caret"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c17" /><label for="c17">高级软件工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c18" /><label for="c18">软件工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c19" /><label for="c19">算法工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c20" /><label for="c20">算法工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c21" /><label for="c21">前端开发工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c22" /><label for="c22">需求工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c23" /><label for="c23">PHP开发工程师3</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c24" /><label for="c24">需求工程师3</label></a>
+												</li>
+												<li role="presentation" class="comlete">
+													<button class="btn btn-default" type="button">关闭</button>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown ">
+											<a href="javscript:void(0)" class=" dropdown-toggle" id="dropdownMenu4" data-toggle="dropdown"><input type="checkbox" class="checkSub" id="Sub4" /><span class="allName">计算机软件</span> <i class="caret"></i></a>
+											<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c25" /><label for="c25">高级软件工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c26" /><label for="c26">软件工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c27" /><label for="c27">算法工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c28" /><label for="c28">算法工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c29" /><label for="c29">前端开发工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c30" /><label for="c30">需求工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c31" /><label for="c31">PHP开发工程师2</label></a>
+												</li>
+												<li role="presentation">
+													<a role="menuitem" tabindex="-1" href="javascirpt:void(0)"><input type="checkbox" id="c32" /><label for="c32">需求工程师2</label></a>
+												</li>
+												<li role="presentation" class="comlete">
+													<button class="btn btn-default" type="button">关闭</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="button_group clearfix">
+										<span href="javascript:void(0)" class="button_red comfirms left">确认</span>
+										<span href="javascript:void(0)" class="button_red cancels right">取消</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list_Item">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		认证资料
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+							</div>
+							<ul class="Authentication_Row clearfix">
+								<li>
+									<p class="img"><img src="images/img_1.jpg" alt="" /></p>
+									<a href="javascript:void(0)" class="button_red">营业执照<input type="file"></a>
+								</li>
+								<li>
+									<p class="img"><img src="images/img_1.jpg" alt="" /></p>
+									<a href="javascript:void(0)" class="button_red">卫生许可证<input type="file"></a>
+								</li>
+								<li>
+									<p class="img"><img src="images/img_1.jpg" alt="" /></p>
+									<a href="javascript:void(0)" class="button_red">生产许可证 <input type="file"></a>
+								</li>
+							</ul>
+							<p class="Attention">(只允许上传小于1M格式为 jpg , gif , png的图片)</p>
+						</div>
+						<div class="list_Item padding_None">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		审核状态
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+								<em class="right red Status">
+							  		审核未通过
+							  	</em>
+							</div>
+						</div>
+						<div class="list_Item padding_None">
+							<div class="panel-heading clearfix">
+								<span class="left icon">
+							  		<i class="icon-caret-left"></i>
+							  	</span>
+								<i class="left middle">
+							  		审核说明
+							  	</i>
+								<span class="right icon">
+							  		<i class="icon-caret-right"></i>
+							  	</span>
+								<em class="right red Status">
+							  		联系手机无法拨通
+							  	</em>
+							</div>
+						</div>
+						<div class="Submit">
+							<input type="submit" class="button_red" value="提交" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/additional-methods.js"></script>
+<script src="layer/layer.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+	$(function() {
+			$('input, textarea').placeholder();
+			$("#Form").validate({
+				submitHandler: function(form) {
+					if($('#Form').valid()) {
+						form.submit()
+					}
+				},
+				onfocusout: function(element) {
+					$(element).valid();
+				},
+				errorPlacement: function(error, element) {
+					if(element.attr("name") == "prov") {
+						error.insertAfter(".erroplace");
+					} else if(element.attr("name") == "bank") {
+						error.insertAfter(".bank_select");
+					} else {
+						error.insertAfter(element);
+					}
+				},
+				//验证规则
+				rules: {
+					ContactName: {
+						required: true,
+						minlength: 2, //最小长度为2
+						texts: true //自定义验证规则，可以在addtioan-methods.js进行修改
+					},
+					telPhone: {
+						required: true, //是否 为必选项
+						mobile: true //插件自带验证规则
+					},
+					phone: {
+						required: false,
+						phone: true //插件自带验证规则
+					},
+					email: {
+						required: false,
+						email: true //插件自带验证规则
+					},
+					CompanyName: {
+						required: true,
+						texts: true, //自定义验证规则，可以在addtioan-methods.js进行修改
+					},
+					LegalName: {
+						required: true,
+						minlength: 2,
+						texts: true //自定义验证规则，可以在addtioan-methods.js进行修改
+					},
+					LegalCard: {
+						Idcard: true, //自定义验证规则，可以在addtioan-methods.js进行修改
+						required: true //是否 为必选项
+					},
+					bank: {
+						required: true,
+					},
+					bankCard: {
+						required: true,
+						number: true
+					},
+					AccountName: {
+						required: true,
+						minlength: true,
+						texts: true
+					},
+					prov: {
+						required: true,
+						selects: true //自定义验证规则，可以在addtioan-methods.js进行修改
+					},
+				},
+				//验证错误提示信息
+				messages: {
+					//验证联系人
+					ContactName: {
+						required: "请输入联系人姓名",
+						minlength: "用户名必需由两个以上汉字组成",
+						texts: "请输入正确姓名"
+					},
+					//验证手机
+					telPhone: {
+						required: "请输入手机号码",
+						mobile: "请输入正确手机号码"
+					},
+					//验证电话号码
+					phone: {
+						phone: "请输入正确号码",
+					},
+					//验证邮箱
+					email: {
+						email: "请输入正确邮箱"
+					},
+					//验证公司名
+					CompanyName: {
+						texts: "请输入正确公司名称",
+						required: "请输入公司名称"
+					},
+					//验证法人姓名
+					LegalName: {
+						texts: "请输入正确法人名称",
+						required: "请输入法人名称",
+						minlength: "法人姓名必需由两个以上汉字组成"
+					},
+					//验证身份证
+					LegalCard: {
+						Idcard: "请输入正确身份证",
+						required: "请输入身份证"
+					},
+					//验证开户银行
+					bank: {
+						required: "请输入开户银行",
+					},
+					//验证银行卡号
+					bankCard: {
+						required: "请输入银行卡号",
+						number: "请输入正确格式"
+					},
+					//验证开户人姓名
+					AccountName: {
+						required: "请输入开户人姓名",
+						minlength: "用户名必需由两个以上汉字组成",
+						texts: "请输入正确姓名"
+					},
+					//验证省
+					prov: {
+						selects: "请选择地区",
+						required: "请选择地区"
+					}
+				}
+			})
+		})
+		// 省市区3及联动
+	$(function() {
+		var selectVal = new CitySelect({
+			data: data,
+			provId: "#prov",
+			cityId: '#city',
+			areaId: '#dist',
+			isSelect: false
+		});
+	})
+
+	//判断文档上传类型
+	function checkImgType(oinput) {
+		if(oinput.val() == "") {
+			layer.msg("请上传图片")
+			return false;
+		} else {
+			var exts = oinput.val().lastIndexOf(".");
+			var ext = oinput.val().substring(exts, exts.length).replace(".", "").toUpperCase();
+			if(ext !== 'PNG' && ext !== 'JPG' && ext !== 'JPEG' && ext !== 'GIF') {
+				layer.msg("只允许上传格式为 jpg , gif , png的图片")
+				oinput.value = "";
+				return false;
+			}
+		} //因为files[0].size在获取文件大小上 IE有兼容问题。则没做大小判断
+		return true;
+	}
+	$("input[type='file']").on("change", function() {
+		var oinput = $(this);
+		checkImgType(oinput)
+	})
+	$(function() {
+		stoppropagation();
+		checkAll();
+		checkSub();
+		addSelect();
+		showCheck();
+	})
+
+	function stoppropagation() {
+		$(".dropdown-menu a").click(function(e) {
+			e.stopPropagation();
+		})
+		$(".dropdown-menu label").click(function(e) {
+			e.stopPropagation();
+		})
+		$(".checkSub").click(function(e) {
+			e.stopPropagation();
+		})
+	}
+	//一级全部勾选
+	function checkAll() {
+		var dd = $(".dd");
+		dd.each(function() {
+			var that = $(this);
+			var checkAll = that.find(".checkAll");
+			var checkSub = that.find(".checkSub");
+			var checkSubchildren = that.find(".dropdown-menu input[type='checkbox']");
+			var a=that.find(".dropdown-menu li a");
+			var olenght = checkSub.length;
+			var clength=checkSubchildren.length;
+				//一级勾选的 时候，二级全部勾选
+			checkAll.click(function() {
+					if(checkAll.is(":checked")) {
+						that.find("input[type='checkbox']").prop("checked", true);
+					} else {
+						that.find("input[type='checkbox']").prop("checked", false);
+					}
+				})
+				//二级checkBox全部选中的 时候 父级标签就勾选 
+			checkSub.click(function() {
+				var nlength = that.find(".checkSub:checked").length;
+				if(nlength == olenght) {
+					checkAll.prop("checked", true);
+				} else {
+					checkAll.prop("checked", false);
+				}
+			})
+			a.click(function() {
+				var nlength = that.find(".dropdown-menu input:checked").length;
+				if(nlength == clength) {
+					checkAll.prop("checked", true);
+				} else {
+					checkAll.prop("checked", false);
+				}
+			})
+		})
+	}
+	//二级全部勾选
+	function checkSub() {
+		var dropDown = $(".list-group .dropdown");
+		//二级标签勾选的 时候里面的子集checkbox全部勾选
+		dropDown.each(function() {
+			var that = $(this);
+			var checkSub = that.find(".checkSub");
+			var checkSubchildren = that.find(".dropdown-menu input[type='checkbox']");
+			var a = that.find(".dropdown-menu li a");
+			var olength = checkSubchildren.length;
+			checkSub.click(function() {
+				if($(this).is(":checked")) {
+					that.find("input[type='checkbox']").prop("checked", true);
+				} else {
+					that.find("input[type='checkbox']").prop("checked", false);
+				}
+			})
+			a.click(function() {
+				var nlength = that.find(".dropdown-menu input:checked").length;
+				if(nlength == olength) {
+					checkSub.prop("checked", true);
+				} else {
+					checkSub.prop("checked", false);
+				}
+			})
+		})
+	}
+		//点击确定后往 dt里面添加选中的数据
+	function addSelect() {
+		var comfirm = $(".button_group .comfirms");
+		var cancles = $(".button_group .cancels");
+		var removes = $(".icon-remove") || null;
+		var dd = $(".dd");
+		var str = "";
+		var arr = [];
+		var id = "";
+		comfirm.click(function() {
+				str = "";
+				arr = [];
+				var ddcheck=dd.find("input:checked");
+				if(ddcheck.length==0){
+					layer.msg("请选择您的经营类型");
+					return
+				};
+				dd.each(function() {
+					var that = $(this);
+					var checkAll = that.find(".checkAll:checked");
+					var AllLength = that.find(".checkAll:checked").length;
+					var checkSub = that.find(".checkSub:checked");
+					var SubLength = checkSub.length;
+					var checkSubChildren = that.find(".dropdown-menu input:checked");
+					var childrenLength = that.find(".dropdown-menu input:checked").length;
+					var dropdown=that.find(".dropdown");
+					if(AllLength) {
+						checkAll.each(function() {
+							var content = $(this).siblings("i").text();
+							id = $(this).attr("id");
+							str += "<span class='tj' dis=" + id + ">" + content + "<i class='icon-remove'></i></span>";
+							arr.push(id);
+						})
+						$(".contentText").empty().append(str);
+						return
+					}
+					
+					if(childrenLength) {
+						checkSubChildren.each(function() {
+							var fathercheck=$(this).parents("ul").siblings("a").find("input[type='checkbox']");
+							if(fathercheck.is(":checked")){
+								return
+							}else{
+									var content = $(this).siblings("label").text();
+									id = $(this).attr("id");
+									str += "<span class='tj' dis=" + id + ">" + content + "<i class='icon-remove'></i></span>";
+									arr.push(id);
+							}
+							$(".contentText").empty().append(str);
+						})
+					}
+					if(SubLength) {
+						checkSub.each(function() {
+							var content = $(this).siblings(".allName").text();
+							id = $(this).attr("id")
+							str += "<span class='tj' dis=" + id + ">" + content + "<i class='icon-remove'></i></span>";
+							arr.push(id);
+						})
+						$(".contentText").empty().append(str);
+					}
+				})
+//				$(".selectClassic").find("input[type='checkbox']").prop("checked", false);
+				console.log(arr)
+			})
+			//取消重置
+		cancles.click(function() {
+				$(".selectClassic").find("input[type='checkbox']").prop("checked", false);
+				$(".contentText").empty();
+				arr = [];
+				console.log(arr)
+			})
+			//删除单个 
+		$(".contentText").delegate(".icon-remove", "click", function() {
+			var val = $(this).parent(".tj").attr("dis");
+			arr.remove(val);
+			console.log(arr)
+			$(this).parents(".tj").detach();
+			$("#"+val).prop("checked",false);
+			$(".dd").each(function(){
+				var children=$(this).find(".dropdown-menu").find("input:checked");
+				var nchildren=$(this).find(".dropdown-menu").find("input");
+				var dropdown=$(this).find(".dropdown");
+				if((!$(this).find(".checkAll").is(":checked"))&&children.length==nchildren.length){
+					$(this).find("input[type='checkbox']").prop("checked",false);
+				}
+				dropdown.each(function(){
+					var children1=$(this).find(".dropdown-menu").find("input:checked");
+					var nchildren2=$(this).find(".dropdown-menu").find("input");
+					if((!$(this).find(".checkSub").is(":checked"))&&children1.length==nchildren2.length){
+						$(this).find("input[type='checkbox']").prop("checked",false);
+					}
+				})
+			})
+		})
+		Array.prototype.remove = function(val) {
+			var index = this.indexOf(val);
+			if(index > -1) {
+				this.splice(index, 1);
+			}
+		};
+	}
+
+	function showCheck() {
+		var btn = true;
+		$(".showDown").click(function() {
+			if(btn) {
+				$(".selectClassic .showwrap").slideDown();
+
+			} else {
+				$(".selectClassic .showwrap").slideUp();
+			}
+			btn = !btn;
+		})
+	}
+</script>

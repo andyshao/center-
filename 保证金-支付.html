@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="Font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="Font/css/font-awesome-ie7.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/Myasset.css" />
+	<script src="js/jquery-1.11.0.js"></script>
+	</head>
+
+	<body>
+		<div class="assetCommon bondPay">
+			<form action="保证金-余额支付.html">
+				<div class="panel panel-default">
+					<div class="panel-heading shopTitle">保证金支付</div>
+					<div class="panel-body">
+						<div class="wrap">
+							支付金额: <span class="red">￥1000.00</span>
+						</div>
+					</div>
+					<div class="panel-body payStyle">
+						<div class="wrap">
+							<h3>
+								<span class="left">支付方式</span>
+								<span class="right"><i class="icon-angle-down"></i></span>
+							</h3>
+							<ul>
+								<li>
+									<input type="radio" id="Alipay" name="payStyle">
+									<img src="images/pay.png" alt="" class="left">
+									<label for="Alipay" class="clearfix">
+										<i class="right  icon"></i>
+									</label>
+								</li>
+								<li>
+									<input type="radio" id="balancePay" name="payStyle">
+									<img src="images/pay2.png" alt="" class="left">
+									<label for="balancePay" class="clearfix">
+										<i class="right  icon"></i>
+									</label>
+								</li>
+								<li>
+									<input type="radio" id="weChatPay" name="payStyle">
+									<img src="images/pay3.png" alt="" class="left">
+									<label for="weChatPay"  class="clearfix">
+										<i class="right  icon"></i>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<input class="button_red" type="submit" value="下一步"></a>
+					<dl class="commander">
+						<dt><i><img src="images/light_03.png" alt="" /></i>温馨提示：</dt>
+						<dd>1.如果在缴纳过程中遇到任何问题，请及时与客服中心取得联系，以便及时处理。</dd>
+						<dd>2.缴纳成功后，余额可能存在延迟现象，一般1-5分钟内会到账，如有问题，请咨询客服；</dd>
+						<dd>3.缴纳完成后，您可以进入充值记录页面查看余额充值状态。</dd>
+					</dl>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/placeholder.js"></script>
+<script>
+$(function(){
+	check();
+	$('input, textarea').placeholder();
+})
+ function check(){
+ 	var li=$(".payStyle").find("li")
+ 	li.click(function(){
+ 		testRadio()
+ 	})
+ 	li.find("label").click(function(e){
+ 		e.stopPropagation()
+ 	})
+ }
+ function testRadio(){
+ 	var radio=$(".payStyle li").find("input[type='radio']");
+ 	radio.each(function(i,e){
+ 		if($(this).is(":checked")){
+ 			$(this).closest('li').find(".icon").addClass('icon-ok-circle');
+ 			$(this).closest('li').siblings('li').find(".icon").removeClass('icon-ok-circle');
+ 		}
+ 	})
+ }
+</script>
